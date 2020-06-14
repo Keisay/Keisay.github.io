@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keisay</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <!-- Header Area -->
+    <header id="header">
+        <div class="row m-0">
+            <div class="col-3" style="background: #FF8A80">
+                <nav class="primary-nav navbar-expand-md">
+                    <div class="site-title text-center text-light py-5">
+                        <a href="#" class="navbar-brand font-mill font-size-40">keisay</a>
+                        <p class="description text-uppercase font-caveat">Kevin Sengsay</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <a href="#home" class="nav-item nav-link text-white-50 font-caveat font-size-16 active">Home</a>
+                        <a href="#about_me" class="nav-item nav-link text-white-50 font-caveat font-size-16 active">About</a>
+                        <a href="#portfolio" class="nav-item nav-link text-white-50 font-caveat font-size-16 active">Portfolio</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <button class="toggle-button"><span class="fas fa-bars fa-2x"></span></button>
+        <div class="social">
+            <span class="mr-3"><i class="fab fa-github"></i></span>
+            <span class="mr-3"><i class="fab fa-youtube"></i></span>
+        </div>
+    </header>
+    <!-- #Header area -->
+    
+    <main id="site-main">
+        <div class="row m-0">
+            <div class="col-md-9 offset-md-3 px-0">
+
+                <!-- Site-banner area -->
+                <section class="site-banner" id="home">
+                    <div class="banner-area">
+                        <div class="author text-center">
+                            <div class="author-img"></div>
+                            <h1 class="text-white font-mill font-size-40 py-3">Kevin Sengsay</h1>
+                            <h5 class="text-white font-cormo font-size-27">welcome <span id="typed"></span></h5>
+                        </div>
+                    </div>
+                </section>
+                <!-- #Site-banner area -->
+
+                <!-- About me area -->
+                    <section class="about px-4 my-5" id="about_me">
+                        <div class="me py-5">
+                            <h5 class="text-uppercase font-caveat font-size-16 text-muted">information</h5>
+                            <h1 class="font-mill font-size-34">About Me</h1>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-sm-5 pl-0">
+                                <img src="./assets/avatar2.jpg" alt="profile image" class="img-fluid">
+                            </div>
+                            <div class="col-sm-6">
+                                <h6 class="text-uppercase font-caveat font-size-16 text-muted">About Me</h6>
+                                <h5 class="font-cormo font-size-20 py-2">I'm Kevin Sengsay & <span id="typed_2"></span></h5>
+                                <p class="font-cormo text-black-50 py-2">
+                                    I enjoy building things and solving problems. 
+                                    When I'm not coding, you'll find me making music <i class="fa fa-music" aria-hidden="true"></i>, or working out somewhere.
+                                </p>
+                                <p>
+                                    <a href="https://github.com/Keisay" style='color: #000000'><i class="fab fa-github fa-3x"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                <!-- #About me area -->
+
+                <!-- Work -->
+                        <section class="portfolio py-5 px-4 bg-light" id="portfolio">
+                            <div class="py-3">
+                                <h5 class="text-uppercase font-caveat font-size-16 text-muted">Portfolio</h5>
+                                <h1 class="font-mill font-size-34">Side Projects</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 my-3">
+                                    <div class="card border-0">
+                                        <a href="https://cryptic-caverns-58408.herokuapp.com/new_search"><img src="./assets/work/work1.png" alt="work1" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <p class="font-cormo font-size-16 text-black-50 text-center">Scraping news from some sites <a href="https://github.com/Keisay/scraping-hub" style='color: #90A4AE'><i class="fa fa-code" aria-hidden="true"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 my-3">
+                                    <div class="card border-0">
+                                        <a href="https://limitless-reef-05661.herokuapp.com/"><img src="./assets/work/work2.png" alt="work2" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <p class="font-cormo font-size-16 text-black-50 text-center">A cool CRUD app <a href="https://github.com/Keisay/do-it" style='color: #90A4AE'><i class="fa fa-code" aria-hidden="true"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 my-3">
+                                    <div class="card border-0">
+                                        <a href="https://picture-on-the-wall.herokuapp.com/home/"><img src="./assets/work/work3.png" alt="work3" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <p class="font-cormo font-size-16 text-black-50 text-center">A stock photo website <a href="https://github.com/Keisay/picture-on-the-wall" style='color: #90A4AE'><i class="fa fa-code" aria-hidden="true"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 my-3">
+                                    <div class="card border-0">
+                                        <a href="https://github.com/Keisay/tiktok-video-scraper"><img src="./assets/work/work4.png" alt="work4" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <p class="font-cormo font-size-16 text-black-50 text-center">A Tiktok scraper</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 my-3">
+                                    <div class="card border-0">
+                                        <a href="https://github.com/Keisay/kompot"><img src="./assets/work/work5.png" alt="work5" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <p class="font-cormo font-size-16 text-black-50 text-center">An Instagram scraper</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                <!-- #Work -->
+
+                <footer id="footer" class="pt-5 px-3">
+                    <div class="row bg-light py-5">
+                        <div class="col-sm-4 my-5 text-center">
+                            <h6 class="font-cormo font-size-16 text-black-50">&copy;2020 keisay</h6>
+                        </div>
+                        <div class="col-sm-4 my-4 text-center">
+                            <div class="footer-title">
+                                <a href="#about_me" class="navbar-brand font-mill font-size-40 text-dark">keisay</a>
+                                <p class="description font-caveat font-size-16 text-black-50 text-uppercase">Kevin Sengsay</p>
+                            </div>
+                            </div>
+                        <div class="col-sm-4 my-5 text-center">
+                            <a href="https://www.youtube.com/channel/UC63evIuuDIleV3bwouF2qBA/featured?view_as=subscriber" style='color: #000000'><span class="mr-3"><i class="fab fa-youtube"></i></span></a>
+                            <a href="https://soundcloud.com/keisay" style='color: #000000'><span class="mr-3"><i class="fab fa-soundcloud"></i></span></a>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+    </main>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+
+<script src="./vendor/typed/typed.min.js"></script>
+
+<script src="./index.js"></script>
+</body>
+</html>
