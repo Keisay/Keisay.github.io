@@ -141,6 +141,88 @@ body{
     padding: 1.5rem 1rem;
 }
 
+/* New modifications 11/11/2020 */
+.portfolio a::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border: 4px solid transparent;
+}
+
+.portfolio a:hover::before {
+    animation: hover 0.65s linear forwards;
+}
+
+@keyframes hover {
+    
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: #FFCDD2;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50% {
+        width: 100%;
+        height: 0;
+        border-top-color: #FFCDD2;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: #FFCDD2;
+        border-right-color: #FFCDD2;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+.portfolio a::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border: 4px solid transparent;
+}
+
+.portfolio a:hover::after {
+    animation: hover2 0.65s linear forwards;
+}
+
+@keyframes hover2 {
+    
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #FFCDD2;
+    }
+    50% {
+        width: 0;
+        height: 100%;
+        border-top-color: #FFCDD2;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #FFCDD2;
+        border-left-color: #FFCDD2;
+    }
+}
+/* End of modifications 11/11/2020 */
+
 @media screen and (min-width: 768px){
     .toggle-button{
         display: none;
